@@ -1,8 +1,7 @@
-import 'reflect-metadata';
-import { Server } from 'http';
-import url from 'url';
 import axios from 'axios';
-
+import { Server } from 'http';
+import 'reflect-metadata';
+import url from 'url';
 import app from '../src/app';
 
 const port = app.get('port') || 8998;

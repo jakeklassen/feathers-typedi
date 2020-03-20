@@ -3,6 +3,7 @@ import favicon from 'serve-favicon';
 import compress from 'compression';
 import helmet from 'helmet';
 import cors from 'cors';
+import { Container } from 'typedi';
 
 import feathers from '@feathersjs/feathers';
 import configuration from '@feathersjs/configuration';
@@ -16,7 +17,6 @@ import services from './services';
 import appHooks from './app.hooks';
 import channels from './channels';
 import authentication from './authentication';
-import Container from 'typedi';
 // Don't remove this comment. It's needed to format import lines nicely.
 
 const app: Application = express(feathers());

@@ -1,5 +1,5 @@
 import { Application } from '../declarations';
-import Container from 'typedi';
+import { Container } from 'typedi';
 import { Users } from './users/users.service';
 // Don't remove this comment. It's needed to format import lines nicely.
 
